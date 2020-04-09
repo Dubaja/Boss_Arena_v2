@@ -555,6 +555,7 @@ MonoBehaviour:
   playerRb: {fileID: 364583036}
   enemyRb: {fileID: 384818028}
   maxHealth: 100
+  speed: 2
   deathEffect: {fileID: 156590, guid: 92d4659cc24cd7e45a053c43173ef4c3, type: 3}
 --- !u!61 &384818027
 BoxCollider2D:

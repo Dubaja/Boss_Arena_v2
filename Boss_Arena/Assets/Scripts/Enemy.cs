@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+	public Transform player;
 	public Rigidbody2D playerRb;
 	public Rigidbody2D enemyRb;
 	public float maxHealth = 100f;
+	public float speed = 2f;
 	//private float currentHealth;
 	public GameObject deathEffect;
 
@@ -16,6 +18,9 @@ public class Enemy : MonoBehaviour
     	Vector2 lookDir = playerRb.position - enemyRb.position;
     	float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
     	enemyRb.rotation = angle;
+    	Vector2 target = lookDir;
+    	target.Normalize();
+    	enemyRb.MovePosition(enemyRb.position + target * speed * Time.fixedDeltaTime);
     }
 
 	public void TakeDamage(float damage){

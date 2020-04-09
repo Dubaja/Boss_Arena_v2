@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 364583035}
   - component: {fileID: 364583039}
   - component: {fileID: 364583040}
+  - component: {fileID: 364583041}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -436,6 +437,25 @@ MonoBehaviour:
     type: 3}
   fireDelta: 0.1
   bulletForce: 20
+--- !u!95 &364583041
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364583034}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6981bb9244861f44b2ad37f364aaa97, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,7 +585,7 @@ GameObject:
   - component: {fileID: 711739615}
   - component: {fileID: 711739614}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: Virtual Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

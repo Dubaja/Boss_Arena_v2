@@ -552,6 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 811d3bae71a0a324d9dcfd0f70ef60cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 364583038}
   playerRb: {fileID: 364583036}
   enemyRb: {fileID: 384818028}
   maxHealth: 100
@@ -603,7 +604,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

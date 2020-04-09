@@ -11,18 +11,12 @@ public class Shooting : MonoBehaviour
 	private float myTime = 0.0f;
 	private float nextFire = 0.5f;
 
-
 	public float bulletForce = 2f;
-
 
 
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetButtonDown("Fire1")){
-        	Shoot();
-        }*/
-
 		myTime = myTime + Time.deltaTime;
 
         if (Input.GetButton("Fire1") && myTime > nextFire)

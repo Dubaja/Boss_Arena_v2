@@ -18,9 +18,13 @@ public class Enemy : MonoBehaviour
     	Vector2 lookDir = playerRb.position - enemyRb.position;
     	float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
     	enemyRb.rotation = angle;
+
+
     	Vector2 target = lookDir;
     	target.Normalize();
-    	enemyRb.MovePosition(enemyRb.position + target * speed * Time.fixedDeltaTime);
+    	if (lookDir.magnitude >= 7){
+    		enemyRb.MovePosition(enemyRb.position + target * speed * Time.fixedDeltaTime);
+    	}
     }
 
 	public void TakeDamage(float damage){

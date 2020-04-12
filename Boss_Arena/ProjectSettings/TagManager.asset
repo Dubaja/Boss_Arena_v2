@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Entity
+  - Enemies
   - Enemy
   layers:
   - Default
@@ -14,10 +16,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Solid
+  - Entities
+  - Pit
+  - Player
   - 
   - 
   - 
@@ -42,6 +44,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Bullet
-    uniqueID: 2436621317
+  - name: BG
+    uniqueID: 1590817557
+    locked: 0
+  - name: SolidsBack
+    uniqueID: 3011703131
+    locked: 0
+  - name: Entities
+    uniqueID: 4011516335
+    locked: 0
+  - name: Guns
+    uniqueID: 3955126477
+    locked: 0
+  - name: SolidsFront
+    uniqueID: 2198852021
+    locked: 0
+  - name: FX
+    uniqueID: 1900314263
+    locked: 0
+  - name: UI
+    uniqueID: 1768579969
     locked: 0

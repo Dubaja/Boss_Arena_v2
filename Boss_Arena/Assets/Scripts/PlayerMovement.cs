@@ -6,18 +6,22 @@ public class PlayerMovement : MonoBehaviour
 {
  	
  	public float moveSpeed = 5f;
- 	public Rigidbody2D rb;
+ 	Rigidbody2D rb;
  	public Camera cam;
 
  	Vector2 movement;
  	Vector2 mousePos;
+
+    void Start(){
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
+        //Debug.Log("jebo mamu");
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 

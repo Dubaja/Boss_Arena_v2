@@ -7,11 +7,20 @@ public class Shooting : MonoBehaviour
 	public Transform firePoint;
 	public GameObject bulletPrefab;
 
+    private float baseFireDelta = 0.3f;
+    private float baseDamage = 20f;
+	public float damage;
+
 	public float fireDelta = 0.5f;
 	private float myTime = 0.0f;
 	private float nextFire = 0.5f;
 
 	public float bulletForce = 2f;
+
+    void Start(){
+        damage = baseDamage;
+        fireDelta = baseFireDelta;
+    }
 
 
     // Update is called once per frame
@@ -35,4 +44,20 @@ public class Shooting : MonoBehaviour
     	rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     	Destroy(bullet, 2f);
     }
+
+    public void SetFireDelta(float factor){
+        fireDelta *= factor;
+    }
+
+    public void SetToBaseFireDelta(){
+        fireDelta = baseFireDelta;
+    }
+
+    public void SetDamage(float factor){
+		damage *= factor;
+	}
+
+	public void SetToBaseDamage(){
+		damage = baseDamage;
+	}
 }

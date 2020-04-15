@@ -170,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   deathEffect: {fileID: 156590, guid: 92d4659cc24cd7e45a053c43173ef4c3, type: 3}
+  drop: {fileID: 5173251234405973084, guid: 2333522c3b8074c4c9d3bcc4793e55e7, type: 3}
 --- !u!1 &1899734801933898300
 GameObject:
   m_ObjectHideFlags: 0

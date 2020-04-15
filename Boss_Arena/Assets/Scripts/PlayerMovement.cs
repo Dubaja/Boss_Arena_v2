@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
- 	
- 	public float moveSpeed = 5f;
+ 	private float baseMoveSpeed = 5f;
+ 	public float moveSpeed;
  	Rigidbody2D rb;
  	public Camera cam;
 
@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
  	Vector2 mousePos;
 
     void Start(){
+        moveSpeed = baseMoveSpeed;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -31,5 +32,13 @@ public class PlayerMovement : MonoBehaviour
     	Vector2 lookDir = mousePos - rb.position;
     	float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
     	rb.rotation = angle;
+    }
+
+    public void SetMoveSpeed(float factor){
+        moveSpeed *= factor;
+    }
+
+    public void SetToBaseMoveSpeed(){
+        moveSpeed = baseMoveSpeed;
     }
 }

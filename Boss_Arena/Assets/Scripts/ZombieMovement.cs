@@ -33,7 +33,7 @@ public class ZombieMovement : MonoBehaviour
 			}
 		}
 	}
-
+    
     public float GetLookDirMagnitude(){
         return lookDir.magnitude;
     }

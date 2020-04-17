@@ -7,6 +7,7 @@ public class EnemyHp : MonoBehaviour
     public float maxHealth = 100f;
     public GameObject deathEffect;
 	public GameObject drop;
+	public GameObject heart;
 
     public void TakeDamage(float damage){
 		maxHealth -= damage;
@@ -24,8 +25,12 @@ public class EnemyHp : MonoBehaviour
 	}
 
 	void DropItem(){
-		if(Random.Range(1,10) == 1){
+		int num = Random.Range(1, 100+1);
+		if(num < 11){
 			Instantiate(drop, transform.position, Quaternion.identity);
+		}
+		if(num >= 11 && num < 21){
+			Instantiate(heart, transform.position, Quaternion.identity);
 		}
 	}
 }

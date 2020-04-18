@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Beating heart
+  m_Name: pwup
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: a6f5096a5265fa4438f2f1b0f9751ae9, type: 3}
+      value: {fileID: 21300000, guid: b95e0d7fc19bdc3489bf9e34801c1aaa, type: 3}
     - time: 0.16666667
-      value: {fileID: 21300000, guid: 37e2dc13ff30a5d46ab03360652f3c16, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: 37e2dc13ff30a5d46ab03360652f3c16, type: 3}
+      value: {fileID: 21300000, guid: 8c26b791aab8574469532e6718801d6b, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: 80bfd64f24032c240bd6810246811bd2, type: 3}
+    - time: 0.41666666
+      value: {fileID: 21300000, guid: 0a8f90c7403e16145ae8d3975f19e451, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: a6f5096a5265fa4438f2f1b0f9751ae9, type: 3}
-    - {fileID: 21300000, guid: 37e2dc13ff30a5d46ab03360652f3c16, type: 3}
-    - {fileID: 21300000, guid: 37e2dc13ff30a5d46ab03360652f3c16, type: 3}
+    - {fileID: 21300000, guid: b95e0d7fc19bdc3489bf9e34801c1aaa, type: 3}
+    - {fileID: 21300000, guid: 8c26b791aab8574469532e6718801d6b, type: 3}
+    - {fileID: 21300000, guid: 80bfd64f24032c240bd6810246811bd2, type: 3}
+    - {fileID: 21300000, guid: 0a8f90c7403e16145ae8d3975f19e451, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.33333334
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6472853988854926304}
   - component: {fileID: 9152087780451050520}
   - component: {fileID: 5351762199413633534}
+  - component: {fileID: 8632149943180054376}
   m_Layer: 0
   m_Name: Sprite-heart
   m_TagString: Drop
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 3e0ca7d1e65389348b65f9e31a0f2df0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a6f5096a5265fa4438f2f1b0f9751ae9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,3 +112,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f854e32002b897429b6f01ae7d9dfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8632149943180054376
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3885416239442928678}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b849f4522351a7468cc6e7e2ea60d17, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
